@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+html, body {
+  box-sizing: border-box;
+  /*font-size: 9pt;*/
+  text-align: center;
+  font: 7pt verdana;
+  overflow: hidden;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #f6f6f5;
+  color: #1e1e1e;
+  /*overflow:hidden;*/
+}
+.magnetBox{
+  margin: 10px 0 0 10px;
+  width:550px;
+}
+.magnet {
+  margin:0px!important;
+  /*font-family: 'VT323', monospace;*/
+  /*font-size: 15pt;*/
+}
+
+.magnet:hover {
+    cursor: pointer;
+}
+.title {
+  position: fixed;
+  right: 0px;
+  bottom:30px;
+  font-size: 50pt;
+  font-family: 'Abril Fatface', sans-serif;
+}
+.rainbow {
+  animation: rainbow 5s ease infinite;
+}
+
+@-webkit-keyframes rainbow{
+  0%{color: #8884FF;}
+	25%{color: #FF934F;}
+	50%{color: #96E072;}
+  75%{color: #2892D7;}
+  100%{color: #8884FF;}
+}
+.whats_this {
+  position: fixed;
+  right: 5px;
+  bottom:5px;
+  font: 20pt verdana;
+}
+.boingo {
+    display: none;
+    position:fixed;
+    left: 30%;
+    top: 10%;
+    width: 510px;
+    z-index: 1000;
+    padding: 110px 50px 110px 50px;
+    /*border: 2px solid black;*/
+    background-color: white;
+    font: 12pt verdana;
+    border-radius: 50%;
+}
+.whats_this, .music_is_off, .music_is_on, .day_time, .night_time {
+    cursor: pointer;
+    font-weight: bold!important;
+}
+.whats_this:hover + div.boingo {
+  display: block!important;
+}
